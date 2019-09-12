@@ -1,0 +1,83 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    library
+{% endblock %}
+
+{% block main %}
+
+<script>
+    function ConfirmDelete()
+    {
+      var x = confirm("Are you sure you want to delete?");
+      if (x)
+          return true;
+      else
+        return false;
+    }
+
+</script>
+
+<h2>
+    previous posts
+</h2>
+<h6>
+    click to expand
+</h6>
+
+<form action="/lib" method="post">
+{% for post in posts %}
+<container>
+    <div id="accordion" role="tablist">
+        <div class="card">
+            <a data-toggle="collapse" data-target="#collapse-{{ post.postid }}">
+                <span class="glypicon glyphicon-menu-down">
+                    {{ post.date }}
+                </span>
+            </a>
+        </div>
+        <div id="collapse-{{ post.postid }}" class="collapse" role="tabpanel" data-parent="#accordion">
+            <div class="card-body align-items-center d-flex justify-content-center">
+                <table class="card-table">
+                    <tr>
+                        <th>
+                            Work
+                        </th>
+                        <th>
+                            Family
+                        </th>
+                        <th>
+                            Hobby
+                        </th>
+                        <th>
+                            Sleep
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            {{ post.work }}
+                        </td>
+                        <td>
+                            {{ post.family }}
+                        </td>
+                        <td>
+                            {{ post.hobby }}
+                        </td>
+                        <td>
+                            {{ post.sleep }}
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="card-body">
+                <p>
+                    {{ post.thoughts }}
+                </p>
+                <button class="btn btn-primary" type="submit" name="delete_btn" Onclick="return ConfirmDelete();" value="{{ post.postid }}">delete</button>
+            </div>
+        </div>
+    </div>
+</container>
+{% endfor %}
+</form>
+{% endblock %}

@@ -1,0 +1,4 @@
+balancebook is a simple web application created for individuals interested in reflecting over their daily lives and using simple data points to track their overall health.
+The idea is pretty simple. Rate how you are feeling about the different areas of your life and give a short note of what's on your mind. You can then track these different areas
+from a data standpoint, and go over your notes in the library section of the application. My hope is that this tool could help people clear their minds and live a more balanced life,
+even though I created it mostly for my own well-being. I use methods like these on a daily basis and I believe everyone would benefit from evaluating their everyday state of mind more regularly. Enjoy!

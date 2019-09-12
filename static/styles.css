@@ -1,0 +1,192 @@
+body
+{
+    /* style of body content */
+    background: #8DD;
+    color: #808080;
+    font-family: 'Roboto', sans-serif;
+}
+
+main .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+main
+{
+    /* scroll horizontally as needed */
+    overflow-x: auto;
+
+    /* center contents */
+    text-align: center;
+}
+
+main img
+{
+    /* constrain images on small screens */
+    max-width: 100%
+}
+
+.btn-primary
+{
+    /* style of button used */
+    background-color: #8EE;
+    border-color:grey;
+    border-radius: 5px;
+    color:grey;
+    margin-top:20px;
+}
+
+  .btn-primary:hover, .btn-primary:active, .btn-primary:focus
+{
+    /* style of button in action */
+    background-color: #808080;
+    outline: none;
+    border:none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.card {
+    /* size, margin and color of the /lib title cards */
+    background:#8ee6e6;
+    border-color: #8DD;
+    margin: 0 auto;
+    float: none;
+    width:13%
+}
+
+.card-body{
+    /* lib card body width, centralizing and margins */
+    margin: 0 auto;
+    float: none;
+    width: 75%;
+}
+
+.card-table {
+    /* fixes spacing and formatting of the /lib card table */
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+
+.chart-div {
+    /* sizes and margins for div used for charts */
+    height: 300px;
+    width: 100%;
+    margin-bottom: 100px;
+    border-radius: 20px;
+}
+
+.div {
+    /* margin for overall div */
+    margin-bottom: 200px;
+}
+
+.form-control:focus {
+    /* color of focus for the form */
+    border-color: #808080;
+    outline: 2;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(180, 180, 180, 0.6);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(180, 180, 180, 0.6);
+}
+
+.form-group {
+    /* margins and size for the form */
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /* margins for all headers */
+    margin-bottom: 20px;
+}
+
+nav {
+    /* background for top navigation bar */
+    background: #8DD;
+}
+
+nav .navbar-brand
+{
+    /* colors and sizes for the navigation logo */
+    font-size: xx-large;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.navbar .navbar-nav-center {
+    /* position of the navigation bar content */
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.navbar .navbar-collapse {
+    /* aligning of the navbar when it collapses */
+    text-align: center;
+}
+
+section {
+    /* section for page content fade */
+    opacity: 1;
+    transition: 0.7s opacity;
+}
+
+.slidecontainer {
+    /* width of data slider */
+    width: 100%;
+}
+
+.slider {
+    /* design of slider */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 50%;
+    height: 15px;
+    border-radius: 5px;
+    background: #BEE;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -o-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:focus {
+    /* design of slider */
+    color:black;
+}
+
+.slider::-webkit-slider-thumb {
+    /* slider thumb for webkit */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4bb;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    /* slider thumb for mozilla */
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #5EE;
+    cursor: pointer;
+    margin-bottom: 100px;
+}
